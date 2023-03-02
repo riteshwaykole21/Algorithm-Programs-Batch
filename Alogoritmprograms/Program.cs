@@ -14,7 +14,9 @@ namespace Alogoritmprograms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\n Enter the Option GivenBelow: \n 1.InsertionSort \n 2.BubbleSort \n 3.Exit");
+                Console.WriteLine("\n Enter the Option GivenBelow: \n 1.InsertionSort \n 2.BubbleSort \n 3.PrimeNumber " +
+                    "Within the range " +
+                    "\n 4.Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -26,6 +28,10 @@ namespace Alogoritmprograms
                         BubbleSorting bubble = new BubbleSorting();
                         bubble.Sort();
                         break;
+                    case 3:
+                        PrimeNumber num = new PrimeNumber();
+                        num.PrimeNum();
+                        break;
                     default:
                         Console.WriteLine("Enter a valid Option");
                         break;
@@ -34,3 +40,4 @@ namespace Alogoritmprograms
         }
     }
 }
+
